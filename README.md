@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-First set your config in ´config/config.yaml´, then execute the following command in your terminal
+First set your config in *config/config.yaml*, then execute the following command in your terminal
 ```sh
 python economy-cheat.py
 
