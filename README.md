@@ -14,7 +14,7 @@ python economy-cheat
 
 ```
 ## Example
-<img alt="example" src="https://imgur.com/KLZVKti" />
+<img alt="example" src="https://i.imgur.com/KLZVKti.png" />
 
 ## Author
 👤 **SkydenFly**
