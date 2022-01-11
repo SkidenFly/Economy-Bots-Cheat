@@ -44,28 +44,25 @@ class EconomyCheat():
         else:
             return cooldown
 
-    def send_sequences(self):
-        for channel in self.channels:
-            print(f"\nStarting sequence in channel {channel}")
-            
-            for command in self.channels[channel]["SEQUENCE"]:
-                request = requests.post(
-                    url= f"https://discordapp.com/api/v6/channels/{channel}/messages", 
-                    headers= self.headers, 
-                    json= {"content": self.channels[channel]["PREFIX"] + command}
-                )
-
-                if request.status_code != 200:
-                    print(f"Error: {request.status_code}")
-                    print(request.json())
-                    break
-                
-                print(f"Command: {command} sended!".rjust(5))
-                time.sleep(self.channels[channel]["DELAY-PER-COMMAND"])
-
     def execute(self):
         while True:
-            self.send_sequences()
+            for channel in self.channels:
+                print(f"\nStarting sequence in channel {channel}")
+
+                for command in self.channels[channel]["SEQUENCE"]:
+                    request = requests.post(
+                        url= f"https://discordapp.com/api/v6/channels/{channel}/messages", 
+                        headers= self.headers, 
+                        json= {"content": self.channels[channel]["PREFIX"] + command}
+                    )
+
+                    if request.status_code != 200:
+                        print(f"Error: {request.status_code}")
+                        print(request.json())
+                        break
+
+                    print(f"Command: {command} sended!".rjust(5))
+                    time.sleep(self.channels[channel]["DELAY-PER-COMMAND"])
             time.sleep(self.get_cooldown)
 
 def main():
