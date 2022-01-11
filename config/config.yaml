@@ -1,0 +1,60 @@
+################################################
+#
+# Economy Cheat - v1.0
+# Author: SkydenFly#1967
+# Discord: https://discord.gg/82BM3BqmDC
+# 
+#
+################################################
+
+#Your discord token
+TOKEN: mfa.aGuaNtEcAllEjErosyCharLy_GaRcIa
+
+#Cooldown per sequence send (in seconds)
+COOLDOWN: 125
+
+#If you enable this option the cooldown will be randomized using the RANDOMIZATION-RANGE
+RANDOMIZED-COOLDOWN: true
+
+#Max randomization range (in seconds). This generates a random number between the cooldown and the cooldown + randomization range
+RANDOMIZATION-RANGE: 150
+
+########## Channel struct ##########
+# CHANNELS:
+#   CHANNEL_ID:
+#     PREFIX: 'PREFIX'
+#     
+#     DELAY_PER_COMMAND: DELAY_IN_SECONDS
+#
+#     SEQUENCE:
+#     - COMMAND_1
+#     - COMMAND_2
+#     - COMMAND_3
+
+#You can add multiple channels ;)
+CHANNELS: 
+  696969696969696969:
+    #Commands prefix
+    PREFIX: '!'
+    
+    #Cooldown per command (in seconds). Minimum you should set 1 or 2
+    DELAY-PER-COMMAND: 2
+
+    #Sequence of commands (without the prefix)
+    SEQUENCE:
+    - work
+    - with 520
+    - buy chicken
+    - cf all
+    - dep all
+
+  420420420420420420:
+    PREFIX: '!'
+
+    DELAY-PER-COMMAND: 3
+
+    SEQUENCE:
+    - work
+    - dep all
+
+
