@@ -19,10 +19,7 @@ python economy-cheat.py
 ## Author
 👤 **SkydenFly**
 * Twitter: [@SkydenF](https://twitter.com/SkydenF)
-* GitHub: [@SkidenFly](https://github.com/SkidenFly)
-* Discord: SkydenFly#1967
-* Dev team: [SkillTeam](https://discord.gg/82BM3BqmDC)
-* Youtube Channel: [SkydenFly](https://youtube.com/c/SkydenFly)
+* Discord: skydenfly
 
 ## 🤝 Contributing
 Contributions, issues and feature requests are welcome!
